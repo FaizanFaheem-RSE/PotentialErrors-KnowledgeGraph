@@ -424,86 +424,86 @@ PREFIX : <http://pse.com/>
 # Relationship 1 
 :Relationship\/Relationship1 a :Relationship ;
 :relationship_name :Allocate ;
-:could_lead_to :Potential_Errors\/List1 .  
+:could_lead_to :Potential_Failures\/List1 .  
 
 # Relationship 2 
 :Relationship\/Relationship2 a :Relationship ;
 :relationship_name :hasFunctionalRelation ;
-:could_lead_to :Potential_Errors\/List2 . 
+:could_lead_to :Potential_Failures\/List2 . 
 
 # Relationship 3
 :Relationship\/Relationship3 a :Relationship ;
 :relationship_name :hasFunctionalRelation ;
-:could_lead_to :Potential_Errors\/List3 . 
+:could_lead_to :Potential_Failures\/List3 . 
 
 # Relationship 4
 :Relationship\/Relationship4 a :Relationship ;
 :relationship_name :isRealizedBy ;
-:could_lead_to :Potential_Errors\/List4 . 
+:could_lead_to :Potential_Failures\/List4 . 
 
 # Relationship 5
 :Relationship\/Relationship5 a :Relationship ;
 :relationship_name :isRealizedBy ;
-:could_lead_to :Potential_Errors\/List5 .
+:could_lead_to :Potential_Failures\/List5 .
 
 # Relationship 6
 :Relationship\/Relationship6 a :Relationship ;
 :relationship_name :isRealizedBy ;
-:could_lead_to :Potential_Errors\/List6 .
+:could_lead_to :Potential_Failures\/List6 .
 
 # Relationship 7
 :Relationship\/Relationship7 a :Relationship ;
 :relationship_name :hasFunctionalRelation ;
-:could_lead_to :Potential_Errors\/List7 .
+:could_lead_to :Potential_Failures\/List7 .
 
 # Relationship 8
 :Relationship\/Relationship8 a :Relationship ;
 :relationship_name :hasFunctionalRelation ;
-:could_lead_to :Potential_Errors\/List8 .
+:could_lead_to :Potential_Failures\/List8 .
 
 # Relationship 9
 :Relationship\/Relationship9 a :Relationship ;
 :relationship_name :isRealizedBy ;
-:could_lead_to :Potential_Errors\/List9 .
+:could_lead_to :Potential_Failures\/List9 .
 
 # Relationship 10
 :Relationship\/Relationship10 a :Relationship ;
 :relationship_name :isRealizedBy ;
-:could_lead_to :Potential_Errors\/List10 .
+:could_lead_to :Potential_Failures\/List10 .
 
 # Relationship 11
 :Relationship\/Relationship11 a :Relationship ;
 :relationship_name :hasFunctionalRelation ;
-:could_lead_to :Potential_Errors\/List11 .
+:could_lead_to :Potential_Failures\/List11 .
 
 # Relationship 12
 :Relationship\/Relationship12 a :Relationship ;
 :relationship_name :Allocate ;
-:could_lead_to :Potential_Errors\/List12 .
+:could_lead_to :Potential_Failures\/List12 .
 
 # Establishing the relationship between List1,List2,List3 and relationships
-:Allocate :could_lead_to :Potential_Errors\/List1 . 
-:hasFunctionalRelation :could_lead_to :Potential_Errors\/List2 . 
-:hasFunctionalRelation :could_lead_to :Potential_Errors\/List3 . 
-:isRealizedBy  :could_lead_to :Potential_Errors\/List4 . 
-:isRealizedBy  :could_lead_to :Potential_Errors\/List5 . 
-:isRealizedBy  :could_lead_to :Potential_Errors\/List6 . 
-:hasFunctionalRelation  :could_lead_to :Potential_Errors\/List7 . 
-:hasFunctionalRelation  :could_lead_to :Potential_Errors\/List8 .
-:isRealizedBy  :could_lead_to :Potential_Errors\/List9 .
-:isRealizedBy  :could_lead_to :Potential_Errors\/List10 .
-:hasFunctionalRelation  :could_lead_to :Potential_Errors\/List11 .
-:Allocate  :could_lead_to :Potential_Errors\/List12 .
+:Allocate :could_lead_to :Potential_Failures\/List1 . 
+:hasFunctionalRelation :could_lead_to :Potential_Failures\/List2 . 
+:hasFunctionalRelation :could_lead_to :Potential_Failures\/List3 . 
+:isRealizedBy  :could_lead_to :Potential_Failures\/List4 . 
+:isRealizedBy  :could_lead_to :Potential_Failures\/List5 . 
+:isRealizedBy  :could_lead_to :Potential_Failures\/List6 . 
+:hasFunctionalRelation  :could_lead_to :Potential_Failures\/List7 . 
+:hasFunctionalRelation  :could_lead_to :Potential_Failures\/List8 .
+:isRealizedBy  :could_lead_to :Potential_Failures\/List9 .
+:isRealizedBy  :could_lead_to :Potential_Failures\/List10 .
+:hasFunctionalRelation  :could_lead_to :Potential_Failures\/List11 .
+:Allocate  :could_lead_to :Potential_Failures\/List12 .
 
 # Potential Errors List 1
-:Potential_Errors\/List1 a :Potential_Errors ;
+:Potential_Failures\/List1 a :Potential_Failures ;
 :that_is :Difficult_ManeuverAtHighSpeed_ForLargeSizedRobots ;
 :that_is :Difficult_Different_ObstaclesDetection_ForSmallSizedRobots ; 
 :that_is :CollosionRisk_AtHighNavigationSpeed ;
 :that_is :PathPlanningInconsistencies_ForLargeRobots_AtHighNavigationSpeed .  
 
 # Potential Errors List 2
-:Potential_Errors\/List2 a :Potential_Errors ;
+:Potential_Failures\/List2 a :Potential_Failures ;
 :that_is :Skidding_AtHighSpeed_LowFrictionSurface ; 
 :that_is :StoppingDelay_AtHighSpeed_LowFrictionSurface ; 
 :that_is :StrainComponents_AtHighFriction_LowSpeed ; 
@@ -511,50 +511,50 @@ PREFIX : <http://pse.com/>
 :that_is :SlowMovement_AtLowFriction_LowSpeed . 
 
 # Potential Errors List 3
-:Potential_Errors\/List3 a :Potential_Errors ;
-:that_is :Slipping_HighSpeed_HighHumidity_LowResolution ; 
+:Potential_Failures\/List3 a :Potential_Failures ;
+:that_is :PathPlanningProblem_HighHumidity_LowResolution ; 
 :that_is :InaccurateObstacleDetection_HighHumidity_LowResolution . 
 
 
 # Potential Errors List 4
-:Potential_Errors\/List4 a :Potential_Errors ;
+:Potential_Failures\/List4 a :Potential_Failures ;
 :that_is :InaccurateObstacleDetection_HighSpeed_LowResolution ; 
 :that_is :NavigationProblems_HighSpeed_LowResolution .  
  
 
 # Potential Errors List 5
-:Potential_Errors\/List5 a :Potential_Errors ;
+:Potential_Failures\/List5 a :Potential_Failures ;
 :that_is :HighPowerConsumption_HighSpeed_HighUpdateRate ; 
 :that_is :DelayedObstaclesDetection_HighSpeed_LowUpdateRate . 
 
 # Potential Errors List 6
-:Potential_Errors\/List6 a :Potential_Errors ;
+:Potential_Failures\/List6 a :Potential_Failures ;
 :that_is :SuddenMovements_HighTorque_LowSpeed . 
 
 # Potential Errors List 7
-:Potential_Errors\/List7 a :Potential_Errors ;
+:Potential_Failures\/List7 a :Potential_Failures ;
 :that_is :UnableToDetectObstacle_AtHighObstacleVelocity_AtLowDetectionRateOfDetectionFunction ;
 :that_is :DelayedDetectionOfObstacle_AtHighObstacleVelocity_AtLowDetectionRateOfDetectionFunction ;
 :that_is :IncorrectClassificationOfObstacleAsStatic_AtLowObstacleVelocity_AtLowDetectionRateOfDetectionFunction . 
 
 # Potential Errors List 8
-:Potential_Errors\/List8 a :Potential_Errors ;
+:Potential_Failures\/List8 a :Potential_Failures ;
 :that_is :UnableToDetectObstacle_AtSmallObstacleSize_AtLowUpdateRateOfDetectionFunction ;
 :that_is :MisclassifyingSingleLargeObstacleAsMultipleObjects_AtLargeObstacleSize_AtLowDetectionRateOfDetectionFunction . 
 
 # Potential Errors List 9
-:Potential_Errors\/List9 a :Potential_Errors ;
+:Potential_Failures\/List9 a :Potential_Failures ;
 :that_is :UnableToDetectSmallObstacle_AtLowSensorResolution_AtLowDetectionRateOfDetectionFunction ; 
 :that_is :UnableToDetectObstacleType_AtLowSensorResolution_AtLowDetectionRateOfDetectionFunction .
 
 # Potential Errors List 10
-:Potential_Errors\/List10 a :Potential_Errors ;
+:Potential_Failures\/List10 a :Potential_Failures ;
 :that_is :DelayedObstacleDetection_AtLowCPUUpdateRate_AtHighDetectionRateOfDetectionFunction .
 
 # Potential Errors List 11
-:Potential_Errors\/List11 a :Potential_Errors ;
+:Potential_Failures\/List11 a :Potential_Failures ;
 :that_is :ReducedDetectionRange_AtHighEnviornmentalHumidity_AtHighDetectionRateOfDetectionFunction . 
 
 # Potential Errors List 12
-:Potential_Errors\/List12 a :Potential_Errors ;
+:Potential_Failures\/List12 a :Potential_Failures ;
 :that_is :MissedObstacleDetection_AtSmallRobotSize_AtHighDetectionRateOfDetectionFunction . 
