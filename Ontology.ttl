@@ -11,18 +11,18 @@ PREFIX : <http://pse.com/>
 :Function_Parameter rdf:type rdfs:Class .
 :Relationship rdf:type rdfs:Class .
 :xsd:string rdf:type rdfs:Class .
-:Potential_Errors rdf:type rdfs:Class .
+:Potential_Failures rdf:type rdfs:Class .
 
 # Define properties with domain and range
-:has_function_parameterid rdf:type rdf:Property ;
+:has_fun_parameter rdf:type rdf:Property ;
                          rdfs:domain :Function ;
                          rdfs:range :Function_Parameter .
 
-:has_parameter_id rdf:type rdf:Property ;
+:has_ele_parameter rdf:type rdf:Property ;
                    rdfs:domain :Element ;
                    rdfs:range :Element_Parameter .
 
-:has_function_id rdf:type rdf:Property ;
+:has_function rdf:type rdf:Property ;
                  rdfs:domain :Element ;
                  rdfs:range :Function .
 
@@ -35,9 +35,8 @@ PREFIX : <http://pse.com/>
 
 :could_lead_to rdf:type rdf:Property ;
              rdfs:domain :Relationship ;
-             rdfs:range  :Potential_Errors .
+             rdfs:range  :Potential_Failures .
 
 :description rdf:type rdf:Property ;
              rdfs:domain :Element ;
              rdfs:range  :xsd:string .
-
