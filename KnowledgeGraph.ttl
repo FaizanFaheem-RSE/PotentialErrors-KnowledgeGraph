@@ -495,14 +495,14 @@ PREFIX : <http://pse.com/>
 :hasFunctionalRelation  :could_lead_to :Potential_Failures\/List11 .
 :Allocate  :could_lead_to :Potential_Failures\/List12 .
 
-# Potential Errors List 1
+# Potential Failures List 1
 :Potential_Failures\/List1 a :Potential_Failures ;
 :that_is :Difficult_ManeuverAtHighSpeed_ForLargeSizedRobots ;
 :that_is :Difficult_Different_ObstaclesDetection_ForSmallSizedRobots ; 
 :that_is :CollosionRisk_AtHighNavigationSpeed ;
 :that_is :PathPlanningInconsistencies_ForLargeRobots_AtHighNavigationSpeed .  
 
-# Potential Errors List 2
+# Potential Failures List 2
 :Potential_Failures\/List2 a :Potential_Failures ;
 :that_is :Skidding_AtHighSpeed_LowFrictionSurface ; 
 :that_is :StoppingDelay_AtHighSpeed_LowFrictionSurface ; 
@@ -510,51 +510,51 @@ PREFIX : <http://pse.com/>
 :that_is :WearAndTearComponents_AtHighFriction_HighSpeed ; 
 :that_is :SlowMovement_AtLowFriction_LowSpeed . 
 
-# Potential Errors List 3
+# Potential Failures List 3
 :Potential_Failures\/List3 a :Potential_Failures ;
 :that_is :PathPlanningProblem_HighHumidity_LowResolution ; 
 :that_is :InaccurateObstacleDetection_HighHumidity_LowResolution . 
 
 
-# Potential Errors List 4
+# Potential Failures List 4
 :Potential_Failures\/List4 a :Potential_Failures ;
 :that_is :InaccurateObstacleDetection_HighSpeed_LowResolution ; 
 :that_is :NavigationProblems_HighSpeed_LowResolution .  
  
 
-# Potential Errors List 5
+# Potential Failures List 5
 :Potential_Failures\/List5 a :Potential_Failures ;
 :that_is :HighPowerConsumption_HighSpeed_HighUpdateRate ; 
 :that_is :DelayedObstaclesDetection_HighSpeed_LowUpdateRate . 
 
-# Potential Errors List 6
+# Potential Failures List 6
 :Potential_Failures\/List6 a :Potential_Failures ;
 :that_is :SuddenMovements_HighTorque_LowSpeed . 
 
-# Potential Errors List 7
+# Potential Failures List 7
 :Potential_Failures\/List7 a :Potential_Failures ;
 :that_is :UnableToDetectObstacle_AtHighObstacleVelocity_AtLowDetectionRateOfDetectionFunction ;
 :that_is :DelayedDetectionOfObstacle_AtHighObstacleVelocity_AtLowDetectionRateOfDetectionFunction ;
 :that_is :IncorrectClassificationOfObstacleAsStatic_AtLowObstacleVelocity_AtLowDetectionRateOfDetectionFunction . 
 
-# Potential Errors List 8
+# Potential Failures List 8
 :Potential_Failures\/List8 a :Potential_Failures ;
 :that_is :UnableToDetectObstacle_AtSmallObstacleSize_AtLowUpdateRateOfDetectionFunction ;
 :that_is :MisclassifyingSingleLargeObstacleAsMultipleObjects_AtLargeObstacleSize_AtLowDetectionRateOfDetectionFunction . 
 
-# Potential Errors List 9
+# Potential Failures List 9
 :Potential_Failures\/List9 a :Potential_Failures ;
 :that_is :UnableToDetectSmallObstacle_AtLowSensorResolution_AtLowDetectionRateOfDetectionFunction ; 
 :that_is :UnableToDetectObstacleType_AtLowSensorResolution_AtLowDetectionRateOfDetectionFunction .
 
-# Potential Errors List 10
+# Potential Failures List 10
 :Potential_Failures\/List10 a :Potential_Failures ;
 :that_is :DelayedObstacleDetection_AtLowCPUUpdateRate_AtHighDetectionRateOfDetectionFunction .
 
-# Potential Errors List 11
+# Potential Failures List 11
 :Potential_Failures\/List11 a :Potential_Failures ;
 :that_is :ReducedDetectionRange_AtHighEnviornmentalHumidity_AtHighDetectionRateOfDetectionFunction . 
 
-# Potential Errors List 12
+# Potential Failures List 12
 :Potential_Failures\/List12 a :Potential_Failures ;
 :that_is :MissedObstacleDetection_AtSmallRobotSize_AtHighDetectionRateOfDetectionFunction . 
