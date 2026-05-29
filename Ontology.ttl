@@ -2,41 +2,63 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-PREFIX : <http://pse.com/>
+@prefix : <http://pse.com/> .
 
 # Define classes
 :Element rdf:type rdfs:Class .
 :Element_Parameter rdf:type rdfs:Class .
 :Function rdf:type rdfs:Class .
 :Function_Parameter rdf:type rdfs:Class .
-:Relationship rdf:type rdfs:Class .
-:xsd:string rdf:type rdfs:Class .
-:Potential_Failures rdf:type rdfs:Class .
+:InteractionContext rdf:type rdfs:Class .
+:RelationshipName rdf:type rdfs:Class .
+:Potential_Failures_List rdf:type rdfs:Class .
+:Failure rdf:type rdfs:Class .
 
 # Define properties with domain and range
-:has_fun_parameter rdf:type rdf:Property ;
-                         rdfs:domain :Function ;
-                         rdfs:range :Function_Parameter .
+:has_function_parameter rdf:type rdf:Property ;
+    rdfs:domain :Function ;
+    rdfs:range :Function_Parameter .
 
-:has_ele_parameter rdf:type rdf:Property ;
-                   rdfs:domain :Element ;
-                   rdfs:range :Element_Parameter .
+:has_element_parameter rdf:type rdf:Property ;
+    rdfs:domain :Element ;
+    rdfs:range :Element_Parameter .
 
 :has_function rdf:type rdf:Property ;
-                 rdfs:domain :Element ;
-                 rdfs:range :Function .
+    rdfs:domain :Element ;
+    rdfs:range :Function .
 
-:has_relation rdf:type rdf:Property ;
-             rdfs:domain :Element ;
-             rdfs:domain :Element_Parameter ;
-             rdfs:domain :Function ;
-             rdfs:domain :Function_Parameter ;
-             rdfs:range  :Relationship .
+:element_participates_in rdf:type rdf:Property ;
+    rdfs:domain :Element ;
+    rdfs:range :InteractionContext .
+
+:element_parameter_participates_in rdf:type rdf:Property ;
+    rdfs:domain :Element_Parameter ;
+    rdfs:range :InteractionContext .
+
+:function_participates_in rdf:type rdf:Property ;
+    rdfs:domain :Function ;
+    rdfs:range :InteractionContext .
+
+:function_parameter_participates_in rdf:type rdf:Property ;
+    rdfs:domain :Function_Parameter ;
+    rdfs:range :InteractionContext .
+
+:has_context_relationship rdf:type rdf:Property ;
+    rdfs:domain :InteractionContext ;
+    rdfs:range :RelationshipName .
 
 :could_lead_to rdf:type rdf:Property ;
-             rdfs:domain :Relationship ;
-             rdfs:range  :Potential_Failures .
+    rdfs:domain :InteractionContext ;
+    rdfs:range :Potential_Failures_List .
+
+:associated_with rdf:type rdf:Property ;
+    rdfs:domain :RelationshipName ;
+    rdfs:range :Potential_Failures_List .
+
+:has_failure rdf:type rdf:Property ;
+    rdfs:domain :Potential_Failures_List ;
+    rdfs:range :Failure .
 
 :description rdf:type rdf:Property ;
-             rdfs:domain :Element ;
-             rdfs:range  :xsd:string .
+    rdfs:domain :Element ;
+    rdfs:range xsd:string .
