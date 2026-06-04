@@ -8,355 +8,355 @@ PREFIX : <http://pse.com/>
 :Element\/Element1 a :Element ;
 :element_name :MobileRobot ;
 :description 'Technical System'^^xsd:string ;
-:has_ele_parameter :Element_Parameter\/EParameter1 ;
-:has_function :Function\/Function1 ;
-:has_relation :Relationship\/Relationship1 . 
+:ref_elementParameter :Element_Parameter\/EParameter1 ;
+:ref_function :Function\/Function1 ;
+:ref_context :InteractionContext\/Context1 . 
 
 # Environment Element Info
 :Element\/Element2 a :Element ;
 :element_name :Ground ;
 :description 'Influencing Factors'^^xsd:string ;
-:has_ele_parameter :Element_Parameter\/EParameter2 ;
-:has_function :Function\/Function2 ;
-:has_relation :Relationship\/Relationship2 . 
+:ref_elementParameter :Element_Parameter\/EParameter2 ;
+:ref_function :Function\/Function2 ;
+:ref_context :InteractionContext\/Context2 . 
 
 # Ground Element Info
 :Element\/Element3 a :Element ;
 :element_name :Environment ;
 :description 'Influencing Factors'^^xsd:string ;
-:has_ele_parameter :Element_Parameter\/EParameter3 ;
-:has_function :Function\/Function3 ;
-:has_relation :Relationship\/Relationship3 . 
+:ref_elementParameter :Element_Parameter\/EParameter3 ;
+:ref_function :Function\/Function3 ;
+:ref_context :InteractionContext\/Context3 . 
 
 # Sensor Element Info
 :Element\/Element4 a :Element ;
 :element_name :Sensor ;
 :description 'Subsystem'^^xsd:string ;
-:has_ele_parameter :Element_Parameter\/EParameter4 ;
-:has_function :Function\/Function4 ;
-:has_relation :Relationship\/Relationship4 . 
+:ref_elementParameter :Element_Parameter\/EParameter4 ;
+:ref_function :Function\/Function4 ;
+:ref_context :InteractionContext\/Context4 . 
 
 # CPU Element Info
 :Element\/Element5 a :Element ;
 :element_name :CPU ;
 :description 'Subsystem'^^xsd:string ;
-:has_ele_parameter :Element_Parameter\/EParameter5 ;
-:has_function :Function\/Function5 ;
-:has_relation :Relationship\/Relationship5 . 
+:ref_elementParameter :Element_Parameter\/EParameter5 ;
+:ref_function :Function\/Function5 ;
+:ref_context :InteractionContext\/Context5 . 
 
 # Actuation System Element Info
 :Element\/Element6 a :Element ;
 :element_name :ActuationSystem ;
 :description 'Subsystem'^^xsd:string ;
-:has_ele_parameter :Element_Parameter\/EParameter6 ;
-:has_function :Function\/Function6 ;
-:has_relation :Relationship\/Relationship6 . 
+:ref_elementParameter :Element_Parameter\/EParameter6 ;
+:ref_function :Function\/Function6 ;
+:ref_context :InteractionContext\/Context6 . 
 
 # Obstacle Element Info for parameter one
 :Element\/Element7 a :Element ;
 :element_name :Obstacle ;
 :description 'Environmental Object'^^xsd:string ;
-:has_ele_parameter :Element_Parameter\/EParameter7 ;
-:has_function :Function\/Function7 ;
-:has_relation :Relationship\/Relationship7 . 
+:ref_elementParameter :Element_Parameter\/EParameter7 ;
+:ref_function :Function\/Function7 ;
+:ref_context :InteractionContext\/Context7 . 
 
 # Obstacle Element Info for parameter one
 :Element\/Element8 a :Element ;
 :element_name :Obstacle ;
 :description 'Environmental Object'^^xsd:string ;
-:has_ele_parameter :Element_Parameter\/EParameter8 ;
-:has_function :Function\/Function8 ;
-:has_relation :Relationship\/Relationship8 . 
+:ref_elementParameter :Element_Parameter\/EParameter8 ;
+:ref_function :Function\/Function8 ;
+:ref_context :InteractionContext\/Context8 . 
 
 # Sensor Element Info for Detect Obstacle function
 :Element\/Element9 a :Element ;
 :element_name :Sensor ;
 :description 'Subsystem'^^xsd:string ;
-:has_ele_parameter :Element_Parameter\/EParameter9 ;
-:has_function :Function\/Function9 ;
-:has_relation :Relationship\/Relationship9 . 
+:ref_elementParameter :Element_Parameter\/EParameter9 ;
+:ref_function :Function\/Function9 ;
+:ref_context :InteractionContext\/Context9 . 
 
 # CPU Info for Detect Obstacle function
 :Element\/Element10 a :Element ;
 :element_name :CPU ;
 :description 'Subsystem'^^xsd:string ;
-:has_ele_parameter :Element_Parameter\/EParameter10 ;
-:has_function :Function\/Function10 ;
-:has_relation :Relationship\/Relationship10 . 
+:ref_elementParameter :Element_Parameter\/EParameter10 ;
+:ref_function :Function\/Function10 ;
+:ref_context :InteractionContext\/Context10 . 
 
 # Environment Info for Detect Obstacle function
 :Element\/Element11 a :Element ;
 :element_name :Environment ;
 :description 'Environmentalelement'^^xsd:string ;
-:has_ele_parameter :Element_Parameter\/EParameter11 ;
-:has_function :Function\/Function11 ;
-:has_relation :Relationship\/Relationship11 . 
+:ref_elementParameter :Element_Parameter\/EParameter11 ;
+:ref_function :Function\/Function11 ;
+:ref_context :InteractionContext\/Context11 . 
 
 # MobileRobot Info for Detect Obstacle function
 :Element\/Element12 a :Element ;
 :element_name :MobileRobot ;
 :description 'System'^^xsd:string ;
-:has_ele_parameter :Element_Parameter\/EParameter12 ;
-:has_function :Function\/Function12 ;
-:has_relation :Relationship\/Relationship12 . 
+:ref_elementParameter :Element_Parameter\/EParameter12 ;
+:ref_function :Function\/Function12 ;
+:ref_context :InteractionContext\/Context12 . 
 
-# MobileRobot Element Relationship with relationship1
-:MobileRobot :has_relation :Relationship\/Relationship1 . 
+# MobileRobot Element Relationship with Context1
+:MobileRobot :element_participates_in :InteractionContext\/Context1 . 
 
 # Ground Element Relationship with relationship2
-:Ground :has_relation :Relationship\/Relationship2 . 
+:Ground :element_participates_in :InteractionContext\/Context2 . 
 
-# Environment Element Relationship with relationship3
-:Environment :has_relation :Relationship\/Relationship3 . 
+# Environment Element Relationship with Context3
+:Environment :element_participates_in :InteractionContext\/Context3 . 
 
-# Sensor Element Relationship with relationship4
-:Sensor :has_relation :Relationship\/Relationship4 . 
+# Sensor Element Relationship with Context4
+:Sensor :element_participates_in :InteractionContext\/Context4 . 
 
-# CPU Element Relationship with relationship5
-:CPU :has_relation :Relationship\/Relationship5 . 
+# CPU Element Relationship with Context5
+:CPU :element_participates_in :InteractionContext\/Context5 . 
 
-# ActuationSystem Element Relationship with relationship6
-:ActuationSystem :has_relation :Relationship\/Relationship6 . 
+# ActuationSystem Element Relationship with Context6
+:ActuationSystem :element_participates_in :InteractionContext\/Context6 . 
 
-# Obstacle Element Relationship with relationship7
-:Obstacle :has_relation :Relationship\/Relationship7 . 
+# Obstacle Element Relationship with Context7
+:Obstacle :element_participates_in :InteractionContext\/Context7 . 
 
-# Obstacle Element Relationship with relationship8
-:Obstacle :has_relation :Relationship\/Relationship8 .
+# Obstacle Element Relationship with Context8
+:Obstacle :element_participates_in :InteractionContext\/Context8 .
 
-# Sesnor Element Relationship with relationship9
-:Sensor :has_relation :Relationship\/Relationship9 .
+# Sesnor Element Relationship with Context9
+:Sensor :element_participates_in :InteractionContext\/Context9 .
 
-# CPU Element Relationship with relationship10
-:CPU :has_relation :Relationship\/Relationship10 .
+# CPU Element Relationship with Context10
+:CPU :element_participates_in :InteractionContext\/Context10 .
 
-# Environment Element Relationship with relationship11
-:Environment :has_relation :Relationship\/Relationship11 .
+# Environment Element Relationship with Context11
+:Environment :element_participates_in :InteractionContext\/Context11 .
 
-# MobileRobot Element Relationship with relationship12
-:MobileRobot :has_relation :Relationship\/Relationship12 .
+# MobileRobot Element Relationship with Context12
+:MobileRobot :element_participates_in :InteractionContext\/Context12 .
 
 # MobileRobot Element Parameter
 :Element_Parameter\/EParameter1 a :Element_Parameter ;
 :Eparameter :Size ;
-:has_relation :Relationship\/Relationship1 .    
+:ref_context :InteractionContext\/Context1 .    
 
 # Ground Element Parameter
 :Element_Parameter\/EParameter2 a :Element_Parameter ;
 :Eparameter :Friction ;
-:has_relation :Relationship\/Relationship2 . 
+:ref_context :InteractionContext\/Context2 . 
 
 # Environment Element Parameter
 :Element_Parameter\/EParameter3 a :Element_Parameter ;
 :Eparameter :Humidity ;
-:has_relation :Relationship\/Relationship3 . 
+:ref_context :InteractionContext\/Context3 . 
 
 # Sensor Element Parameter
 :Element_Parameter\/EParameter4 a :Element_Parameter ;
 :Eparameter :Resolution ;
-:has_relation :Relationship\/Relationship4 . 
+:ref_context :InteractionContext\/Context4 . 
 
 # CPU Element Parameter
 :Element_Parameter\/EParameter5 a :Element_Parameter ;
 :Eparameter :UpdateRate ;
-:has_relation :Relationship\/Relationship5 .
+:ref_context :InteractionContext\/Context5 .
 
 # ActuationSystem Element Parameter
 :Element_Parameter\/EParameter6 a :Element_Parameter ;
 :Eparameter :Torque ;
-:has_relation :Relationship\/Relationship6 .
+:ref_context :InteractionContext\/Context6 .
 
 # Obstacle Element Parameter
 :Element_Parameter\/EParameter7 a :Element_Parameter ;
 :Eparameter :Velocity ;
-:has_relation :Relationship\/Relationship7 .
+:ref_context :InteractionContext\/Context7 .
 
 # Obstacle Element Parameter
 :Element_Parameter\/EParameter8 a :Element_Parameter ;
 :Eparameter :Size ;
-:has_relation :Relationship\/Relationship8 .
+:ref_context :InteractionContext\/Context8 .
 
 # Sensor Element Parameter 
 :Element_Parameter\/EParameter9 a :Element_Parameter ;
 :Eparameter :Resolution ;
-:has_relation :Relationship\/Relationship9 .
+:ref_context :InteractionContext\/Context9 .
 
 # CPU Element Parameter 
 :Element_Parameter\/EParameter10 a :Element_Parameter ;
 :Eparameter :UpdateRate ;
-:has_relation :Relationship\/Relationship10 .
+:ref_context :InteractionContext\/Context10 .
 
 # Environment Element Parameter 
 :Element_Parameter\/EParameter11 a :Element_Parameter ;
 :Eparameter :Humidity ;
-:has_relation :Relationship\/Relationship11 .
+:ref_context :InteractionContext\/Context11 .
 
 # MobileRobot Element Parameter 
 :Element_Parameter\/EParameter12 a :Element_Parameter ;
 :Eparameter :Size ;
-:has_relation :Relationship\/Relationship12 .
+:ref_context :InteractionContext\/Context12 .
 
-# Establishing the relationship between Size and Relationalship1. 
-:Size :has_relation :Relationship\/Relationship1 .
+# Establishing the relationship between Size and Context1. 
+:Size :element_parameter_participates_in :InteractionContext\/Context1 .
 
-# Establishing the relationship between Friction and Relationalship2. 
-:Friction :has_relation :Relationship\/Relationship2 .
+# Establishing the relationship between Friction and Context2. 
+:Friction :element_parameter_participates_in :InteractionContext\/Context2 .
 
-# Establishing the relationship between Humidity and Relationalship3. 
-:Humidity :has_relation :Relationship\/Relationship3 .
+# Establishing the relationship between Humidity and Context3. 
+:Humidity :element_parameter_participates_in :InteractionContext\/Context3 .
 
-# Establishing the relationship between Resolution and Relationalship4. 
-:Resolution :has_relation :Relationship\/Relationship4 .
+# Establishing the relationship between Resolution and Context4. 
+:Resolution :element_parameter_participates_in :InteractionContext\/Context4 .
 
-# Establishing the relationship between UpdateRate and Relationalship5. 
-:ÚpdateRate :has_relation :Relationship\/Relationship5 .
+# Establishing the relationship between UpdateRate and Context5. 
+:UpdateRate :element_parameter_participates_in :InteractionContext\/Context5 .
 
-# Establishing the relationship between Torque and Relationalship6. 
-:Torque :has_relation :Relationship\/Relationship6 .
+# Establishing the relationship between Torque and Context6. 
+:Torque :element_parameter_participates_in :InteractionContext\/Context6 .
 
-# Establishing the relationship between Velocity and Relationalship7. 
-:Velocity :has_relation :Relationship\/Relationship7 .
+# Establishing the relationship between Velocity and Context7. 
+:Velocity :element_parameter_participates_in :InteractionContext\/Context7 .
 
-# Establishing the relationship between Size and Relationalship8. 
-:Size :has_relation :Relationship\/Relationship8 .
+# Establishing the relationship between Size and Context8. 
+:Size :element_parameter_participates_in :InteractionContext\/Context8 .
 
-# Establishing the relationship between Resolution and Relationalship9. 
-:Resolution :has_relation :Relationship\/Relationship9 .
+# Establishing the relationship between Resolution and Context9. 
+:Resolution :element_parameter_participates_in :InteractionContext\/Context9 .
 
-# Establishing the relationship between UpdateRate and Relationalship10. 
-:UpdateRate :has_relation :Relationship\/Relationship10 .
+# Establishing the relationship between UpdateRate and Context10. 
+:UpdateRate :element_parameter_participates_in :InteractionContext\/Context10 .
 
-# Establishing the relationship between Humidity and Relationalship11. 
-:Humidity :has_relation :Relationship\/Relationship11 .
+# Establishing the relationship between Humidity and Context11. 
+:Humidity :element_parameter_participates_in :InteractionContext\/Context11 .
 
-# Establishing the relationship between Size and Relationalship12. 
-:Size :has_relation :Relationship\/Relationship12 .
+# Establishing the relationship between Size and Context12. 
+:Size :element_parameter_participates_in :InteractionContext\/Context12 .
 
 # MobileRobot Associated Function 
 :Function\/Function1 a :Function ; 
-:has_function_name :Navigate ; 
-:has_fun_Parameter :Function_Parameter\/FParameter1 ;
-:has_relation :Relationship\/Relationship1 . 
+:function_name :Navigate ; 
+:ref_functionParameter :Function_Parameter\/FParameter1 ;
+:ref_context :InteractionContext\/Context1 . 
 
 # Ground Associated Function 
 :Function\/Function2 a :Function ; 
-:has_function_name :Navigate ; 
-:has_fun_Parameter :Function_Parameter\/FParameter2 ;
-:has_relation :Relationship\/Relationship2 . 
+:function_name :Navigate ; 
+:ref_functionParameter :Function_Parameter\/FParameter2 ;
+:ref_context :InteractionContext\/Context2 . 
 
 # Environment Associated Function 
 :Function\/Function3 a :Function ; 
-:has_function_name :Navigate ; 
-:has_fun_Parameter :Function_Parameter\/FParameter3 ;
-:has_relation :Relationship\/Relationship3 . 
+:function_name :Navigate ; 
+:ref_functionParameter :Function_Parameter\/FParameter3 ;
+:ref_context :InteractionContext\/Context3 . 
 
 # Sensor Associated Function 
 :Function\/Function4 a :Function ; 
-:has_function_name :Navigate ; 
-:has_fun_Parameter :Function_Parameter\/FParameter4 ;
-:has_relation :Relationship\/Relationship4 . 
+:function_name :Navigate ; 
+:ref_functionParameter :Function_Parameter\/FParameter4 ;
+:ref_context :InteractionContext\/Context4 . 
 
 # CPU Associated Function 
 :Function\/Function5 a :Function ; 
-:has_function_name :Navigate ; 
-:has_fun_Parameter :Function_Parameter\/FParameter5 ;
-:has_relation :Relationship\/Relationship5 . 
+:function_name :Navigate ; 
+:ref_functionParameter :Function_Parameter\/FParameter5 ;
+:ref_context :InteractionContext\/Context5 . 
 
 # Actuation System Associated Function 
 :Function\/Function6 a :Function ; 
-:has_function_name :Navigate ; 
-:has_fun_Parameter :Function_Parameter\/FParameter6 ;
-:has_relation :Relationship\/Relationship6 .
+:function_name :Navigate ; 
+:ref_functionParameter :Function_Parameter\/FParameter6 ;
+:ref_context :InteractionContext\/Context6 .
 
 # Obstacle Associated Function 
 :Function\/Function7 a :Function ; 
-:has_function_name :DetectObstacle ; 
-:has_fun_Parameter :Function_Parameter\/FParameter7 ;
-:has_relation :Relationship\/Relationship7 .
+:function_name :DetectObstacle ; 
+:ref_functionParameter :Function_Parameter\/FParameter7 ;
+:ref_context :InteractionContext\/Context7 .
 
 # Obstacle Associated Function 
 :Function\/Function8 a :Function ; 
-:has_function_name :DetectObstacle ; 
-:has_fun_Parameter :Function_Parameter\/FParameter8 ;
-:has_relation :Relationship\/Relationship8 .
+:function_name :DetectObstacle ; 
+:ref_functionParameter :Function_Parameter\/FParameter8 ;
+:ref_context :InteractionContext\/Context8 .
 
 # Sensor Associated Function 
 :Function\/Function9 a :Function ; 
-:has_function_name :DetectObstacle ; 
-:has_fun_Parameter :Function_Parameter\/FParameter9 ;
-:has_relation :Relationship\/Relationship9 .
+:function_name :DetectObstacle ; 
+:ref_functionParameter :Function_Parameter\/FParameter9 ;
+:ref_context :InteractionContext\/Context9 .
 
 # CPU Associated Function 
 :Function\/Function10 a :Function ; 
-:has_function_name :DetectObstacle ; 
-:has_fun_Parameter :Function_Parameter\/FParameter10 ;
-:has_relation :Relationship\/Relationship10 .
+:function_name :DetectObstacle ; 
+:ref_functionParameter :Function_Parameter\/FParameter10 ;
+:ref_context :InteractionContext\/Context10 .
 
 # Environment Associated Function 
 :Function\/Function11 a :Function ; 
-:has_function_name :DetectObstacle ; 
-:has_fun_Parameter :Function_Parameter\/FParameter11 ;
-:has_relation :Relationship\/Relationship11 .
+:function_name :DetectObstacle ; 
+:ref_functionParameter :Function_Parameter\/FParameter11 ;
+:ref_context :InteractionContext\/Context11 .
 
 # MobileRobot Function Parameter
 :Function_Parameter\/FParameter1 a :Function_Parameter ; 
-:function_parameter_name :Speed ;
-:has_relation :Relationship\/Relationship1 .
+:fparameter :Speed ;
+:ref_context :InteractionContext\/Context1 .
 
 # Ground Function Parameter
 :Function_Parameter\/FParameter2 a :Function_Parameter ; 
-:function_parameter_name :Speed ;
-:has_relation :Relationship\/Relationship2 .
+:fparameter :Speed ;
+:ref_context :InteractionContext\/Context2 .
 
 # Enviornemt Function Parameter
 :Function_Parameter\/FParameter3 a :Function_Parameter ; 
-:function_parameter_name :Speed ;
-:has_relation :Relationship\/Relationship3 .
+:fparameter :Speed ;
+:ref_context :InteractionContext\/Context3 .
 
 # Sensor Function Parameter
 :Function_Parameter\/FParameter4 a :Function_Parameter ; 
-:function_parameter_name :Speed ;
-:has_relation :Relationship\/Relationship4 .
+:fparameter :Speed ;
+:ref_context :InteractionContext\/Context4 .
 
 # CPU Function Parameter
 :Function_Parameter\/FParameter5 a :Function_Parameter ; 
-:function_parameter_name :Speed ;
-:has_relation :Relationship\/Relationship5 .
+:fparameter :Speed ;
+:ref_context :InteractionContext\/Context5 .
 
 # Actuation System Function Parameter
 :Function_Parameter\/FParameter6 a :Function_Parameter ; 
-:function_parameter_name :Speed ;
-:has_relation :Relationship\/Relationship6 .
+:fparameter :Speed ;
+:ref_context :InteractionContext\/Context6 .
 
 # Obstacle Function Parameter
 :Function_Parameter\/FParameter7 a :Function_Parameter ; 
-:function_parameter_name :DetectionRate ;
-:has_relation :Relationship\/Relationship7 .
+:fparameter :DetectionRate ;
+:ref_context :InteractionContext\/Context7 .
 
 # Obstacle Function Parameter
 :Function_Parameter\/FParameter8 a :Function_Parameter ; 
-:function_parameter_name :DetectionRate ;
-:has_relation :Relationship\/Relationship8 .
+:fparameter :DetectionRate ;
+:ref_context :InteractionContext\/Context8 .
 
 # Sensor Function Parameter
 :Function_Parameter\/FParameter9 a :Function_Parameter ; 
-:function_parameter_name :DetectionRate ;
-:has_relation :Relationship\/Relationship9 .
+:fparameter :DetectionRate ;
+:ref_context :InteractionContext\/Context9 .
 
 # CPU Function Parameter
 :Function_Parameter\/FParameter10 a :Function_Parameter ; 
-:function_parameter_name :UpdateRate ;
-:has_relation :Relationship\/Relationship10 .
+:fparameter :UpdateRate ;
+:ref_context :InteractionContext\/Context10 .
 
 # Environment Function Parameter
 :Function_Parameter\/FParameter11 a :Function_Parameter ; 
-:function_parameter_name :Humidity ;
-:has_relation :Relationship\/Relationship11 .
+:fparameter :Humidity ;
+:ref_context :InteractionContext\/Context11 .
 
 # MobileRobot Function Parameter
 :Function_Parameter\/FParameter12 a :Function_Parameter ; 
-:function_parameter_name :Size ;
-:has_relation :Relationship\/Relationship12 .
+:fparameter :Size ;
+:ref_context :InteractionContext\/Context12 .
 
 # Establishing the relationship between MobileRobot and Function. 
 :MobileRobot :has_function :Navigate . 
@@ -392,169 +392,169 @@ PREFIX : <http://pse.com/>
 :MobileRobot :has_function :DetectObstacle .
 
 # Establishing the relationship between Navigate and Speed. Also between DetectObstacle and DetectionRate
-:Navigate :has_fun_parameter :Speed ;
-:has_relation :Relationship\/Relationship1 ;
-:has_relation :Relationship\/Relationship2 ;
-:has_relation :Relationship\/Relationship3 ;
-:has_relation :Relationship\/Relationship4 ;
-:has_relation :Relationship\/Relationship5 ;
-:has_relation :Relationship\/Relationship6 .
-:DetectObstacle :has_fun_parameter :DetectionRate ;
-:has_relation :Relationship\/Relationship7 ;
-:has_relation :Relationship\/Relationship8 ;
-:has_relation :Relationship\/Relationship9 ;
-:has_relation :Relationship\/Relationship10 ;
-:has_relation :Relationship\/Relationship11 ;
-:has_relation :Relationship\/Relationship12 .
+:Navigate :has_function_parameter :Speed ;
+:function_participates_in :InteractionContext\/Context1 ;
+:function_participates_in :InteractionContext\/Context2 ;
+:function_participates_in :InteractionContext\/Context3 ;
+:function_participates_in :InteractionContext\/Context4 ;
+:function_participates_in :InteractionContext\/Context5 ;
+:function_participates_in :InteractionContext\/Context6 .
+:DetectObstacle :has_function_parameter :DetectionRate ;
+:function_participates_in :InteractionContext\/Context7 ;
+:function_participates_in :InteractionContext\/Context8 ;
+:function_participates_in :InteractionContext\/Context9 ;
+:function_participates_in :InteractionContext\/Context10 ;
+:function_participates_in :InteractionContext\/Context11 ;
+:function_participates_in :InteractionContext\/Context12 .
 
 # Establishing the relationship between Speed and Relationship1 & Relationship2 & Relationship3 and so on
-:Speed :has_relation :Relationship\/Relationship1 .
-:Speed :has_relation :Relationship\/Relationship2 .
-:Speed :has_relation :Relationship\/Relationship3 .
-:Speed :has_relation :Relationship\/Relationship4 .
-:Speed :has_relation :Relationship\/Relationship5 .
-:Speed :has_relation :Relationship\/Relationship6 .
-:DetectionRate :has_relation :Relationship\/Relationship7 .
-:DetectionRate :has_relation :Relationship\/Relationship8 .
-:DetectionRate :has_relation :Relationship\/Relationship9 .
-:DetectionRate :has_relation :Relationship\/Relationship10 .
-:DetectionRate :has_relation :Relationship\/Relationship11 .
-:DetectionRate :has_relation :Relationship\/Relationship12 .
+:Speed :function_parameter_participates_in :InteractionContext\/Context1 .
+:Speed :function_parameter_participates_in :InteractionContext\/Context2 .
+:Speed :function_parameter_participates_in :InteractionContext\/Context3 .
+:Speed :function_parameter_participates_in :InteractionContext\/Context4 .
+:Speed :function_parameter_participates_in :InteractionContext\/Context5 .
+:Speed :function_parameter_participates_in :InteractionContext\/Context6 .
+:DetectionRate :function_parameter_participates_in :InteractionContext\/Context7 .
+:DetectionRate :function_parameter_participates_in :InteractionContext\/Context8 .
+:DetectionRate :function_parameter_participates_in :InteractionContext\/Context9 .
+:DetectionRate :function_parameter_participates_in :InteractionContext\/Context10 .
+:DetectionRate :function_parameter_participates_in :InteractionContext\/Context11 .
+:DetectionRate :function_parameter_participates_in :InteractionContext\/Context12 .
 
-# Relationship 1 
-:Relationship\/Relationship1 a :Relationship ;
-:relationship_name :Allocate ;
+# Context 1 
+:InteractionContext\/Context1 a :InteractionContext ;
+:has_context_relationship :Allocate ;
 :could_lead_to :Potential_Failures\/List1 .  
 
-# Relationship 2 
-:Relationship\/Relationship2 a :Relationship ;
-:relationship_name :hasFunctionalRelation ;
+# Context 2 
+:InteractionContext\/Context2 a :InteractionContext ;
+:has_context_relationship :hasFunctionalRelation ;
 :could_lead_to :Potential_Failures\/List2 . 
 
-# Relationship 3
-:Relationship\/Relationship3 a :Relationship ;
-:relationship_name :hasFunctionalRelation ;
+# Context 3
+:InteractionContext\/Context3 a :InteractionContext ;
+:has_context_relationship :hasFunctionalRelation ;
 :could_lead_to :Potential_Failures\/List3 . 
 
-# Relationship 4
-:Relationship\/Relationship4 a :Relationship ;
-:relationship_name :isRealizedBy ;
+# Context 4
+:InteractionContext\/Context4 a :InteractionContext ;
+:has_context_relationship :isRealizedBy ;
 :could_lead_to :Potential_Failures\/List4 . 
 
-# Relationship 5
-:Relationship\/Relationship5 a :Relationship ;
-:relationship_name :isRealizedBy ;
+# Context 5
+:InteractionContext\/Context5 a :InteractionContext ;
+:has_context_relationship :isRealizedBy ;
 :could_lead_to :Potential_Failures\/List5 .
 
-# Relationship 6
-:Relationship\/Relationship6 a :Relationship ;
-:relationship_name :isRealizedBy ;
+# Context 6
+:InteractionContext\/Context6 a :InteractionContext ;
+:has_context_relationship :isRealizedBy ;
 :could_lead_to :Potential_Failures\/List6 .
 
-# Relationship 7
-:Relationship\/Relationship7 a :Relationship ;
-:relationship_name :hasFunctionalRelation ;
+# Context 7
+:InteractionContext\/Context7 a :InteractionContext ;
+:has_context_relationship :hasFunctionalRelation ;
 :could_lead_to :Potential_Failures\/List7 .
 
-# Relationship 8
-:Relationship\/Relationship8 a :Relationship ;
-:relationship_name :hasFunctionalRelation ;
+# Context 8
+:InteractionContext\/Context8 a :InteractionContext ;
+:has_context_relationship :hasFunctionalRelation ;
 :could_lead_to :Potential_Failures\/List8 .
 
-# Relationship 9
-:Relationship\/Relationship9 a :Relationship ;
-:relationship_name :isRealizedBy ;
+# Context 9
+:InteractionContext\/Context9 a :InteractionContext ;
+:has_context_relationship :isRealizedBy ;
 :could_lead_to :Potential_Failures\/List9 .
 
-# Relationship 10
-:Relationship\/Relationship10 a :Relationship ;
-:relationship_name :isRealizedBy ;
+# Context 10
+:InteractionContext\/Context10 a :InteractionContext ;
+:has_context_relationship :isRealizedBy ;
 :could_lead_to :Potential_Failures\/List10 .
 
-# Relationship 11
-:Relationship\/Relationship11 a :Relationship ;
-:relationship_name :hasFunctionalRelation ;
+# Context 11
+:InteractionContext\/Context11 a :InteractionContext ;
+:has_context_relationship :hasFunctionalRelation ;
 :could_lead_to :Potential_Failures\/List11 .
 
-# Relationship 12
-:Relationship\/Relationship12 a :Relationship ;
-:relationship_name :Allocate ;
+# Context 12
+:InteractionContext\/Context12 a :InteractionContext ;
+:has_context_relationship :Allocate ;
 :could_lead_to :Potential_Failures\/List12 .
 
 # Establishing the relationship between List1,List2,List3 and relationships
-:Allocate :could_lead_to :Potential_Failures\/List1 . 
-:hasFunctionalRelation :could_lead_to :Potential_Failures\/List2 . 
-:hasFunctionalRelation :could_lead_to :Potential_Failures\/List3 . 
-:isRealizedBy  :could_lead_to :Potential_Failures\/List4 . 
-:isRealizedBy  :could_lead_to :Potential_Failures\/List5 . 
-:isRealizedBy  :could_lead_to :Potential_Failures\/List6 . 
-:hasFunctionalRelation  :could_lead_to :Potential_Failures\/List7 . 
-:hasFunctionalRelation  :could_lead_to :Potential_Failures\/List8 .
-:isRealizedBy  :could_lead_to :Potential_Failures\/List9 .
-:isRealizedBy  :could_lead_to :Potential_Failures\/List10 .
-:hasFunctionalRelation  :could_lead_to :Potential_Failures\/List11 .
-:Allocate  :could_lead_to :Potential_Failures\/List12 .
+:Allocate :associated_with :Potential_Failures\/List1 . 
+:hasFunctionalRelation :associated_with :Potential_Failures\/List2 . 
+:hasFunctionalRelation :associated_with :Potential_Failures\/List3 . 
+:isRealizedBy  :associated_with :Potential_Failures\/List4 . 
+:isRealizedBy  :associated_with :Potential_Failures\/List5 . 
+:isRealizedBy  :associated_with :Potential_Failures\/List6 . 
+:hasFunctionalRelation  :associated_with :Potential_Failures\/List7 . 
+:hasFunctionalRelation  :associated_with :Potential_Failures\/List8 .
+:isRealizedBy  :associated_with :Potential_Failures\/List9 .
+:isRealizedBy  :associated_with :Potential_Failures\/List10 .
+:hasFunctionalRelation  :associated_with :Potential_Failures\/List11 .
+:Allocate  :associated_with :Potential_Failures\/List12 .
 
 # Potential Failures List 1
 :Potential_Failures\/List1 a :Potential_Failures ;
-:that_is :Difficult_ManeuverAtHighSpeed_ForLargeSizedRobots ;
-:that_is :Difficult_Different_ObstaclesDetection_ForSmallSizedRobots ; 
-:that_is :CollosionRisk_AtHighNavigationSpeed ;
-:that_is :PathPlanningInconsistencies_ForLargeRobots_AtHighNavigationSpeed .  
+:has_failure :Difficult_ManeuverAtHighSpeed_ForLargeSizedRobots ;
+:has_failure :Difficult_Different_ObstaclesDetection_ForSmallSizedRobots ; 
+:has_failure :CollosionRisk_AtHighNavigationSpeed ;
+:has_failure :PathPlanningInconsistencies_ForLargeRobots_AtHighNavigationSpeed .  
 
 # Potential Failures List 2
 :Potential_Failures\/List2 a :Potential_Failures ;
-:that_is :Skidding_AtHighSpeed_LowFrictionSurface ; 
-:that_is :StoppingDelay_AtHighSpeed_LowFrictionSurface ; 
-:that_is :StrainComponents_AtHighFriction_LowSpeed ; 
-:that_is :WearAndTearComponents_AtHighFriction_HighSpeed ; 
-:that_is :SlowMovement_AtLowFriction_LowSpeed . 
+:has_failure :Skidding_AtHighSpeed_LowFrictionSurface ; 
+:has_failure :StoppingDelay_AtHighSpeed_LowFrictionSurface ; 
+:has_failure :StrainComponents_AtHighFriction_LowSpeed ; 
+:has_failure :WearAndTearComponents_AtHighFriction_HighSpeed ; 
+:has_failure :SlowMovement_AtLowFriction_LowSpeed . 
 
 # Potential Failures List 3
 :Potential_Failures\/List3 a :Potential_Failures ;
-:that_is :PathPlanningProblem_HighHumidity_LowResolution ; 
-:that_is :InaccurateObstacleDetection_HighHumidity_LowResolution . 
+:has_failure :PathPlanningProblem_HighHumidity_LowResolution ; 
+:has_failure :InaccurateObstacleDetection_HighHumidity_LowResolution . 
 
 
 # Potential Failures List 4
 :Potential_Failures\/List4 a :Potential_Failures ;
-:that_is :InaccurateObstacleDetection_HighSpeed_LowResolution ; 
-:that_is :NavigationProblems_HighSpeed_LowResolution .  
+:has_failure :InaccurateObstacleDetection_HighSpeed_LowResolution ; 
+:has_failure :NavigationProblems_HighSpeed_LowResolution .  
  
 
 # Potential Failures List 5
 :Potential_Failures\/List5 a :Potential_Failures ;
-:that_is :HighPowerConsumption_HighSpeed_HighUpdateRate ; 
-:that_is :DelayedObstaclesDetection_HighSpeed_LowUpdateRate . 
+:has_failure :HighPowerConsumption_HighSpeed_HighUpdateRate ; 
+:has_failure :DelayedObstaclesDetection_HighSpeed_LowUpdateRate . 
 
 # Potential Failures List 6
 :Potential_Failures\/List6 a :Potential_Failures ;
-:that_is :SuddenMovements_HighTorque_LowSpeed . 
+:has_failure :SuddenMovements_HighTorque_LowSpeed . 
 
 # Potential Failures List 7
 :Potential_Failures\/List7 a :Potential_Failures ;
-:that_is :UnableToDetectObstacle_AtHighObstacleVelocity_AtLowDetectionRateOfDetectionFunction ;
-:that_is :DelayedDetectionOfObstacle_AtHighObstacleVelocity_AtLowDetectionRateOfDetectionFunction ;
-:that_is :IncorrectClassificationOfObstacleAsStatic_AtLowObstacleVelocity_AtLowDetectionRateOfDetectionFunction . 
+:has_failure :UnableToDetectObstacle_AtHighObstacleVelocity_AtLowDetectionRateOfDetectionFunction ;
+:has_failure :DelayedDetectionOfObstacle_AtHighObstacleVelocity_AtLowDetectionRateOfDetectionFunction ;
+:has_failure :IncorrectClassificationOfObstacleAsStatic_AtLowObstacleVelocity_AtLowDetectionRateOfDetectionFunction . 
 
 # Potential Failures List 8
 :Potential_Failures\/List8 a :Potential_Failures ;
-:that_is :UnableToDetectObstacle_AtSmallObstacleSize_AtLowUpdateRateOfDetectionFunction ;
-:that_is :MisclassifyingSingleLargeObstacleAsMultipleObjects_AtLargeObstacleSize_AtLowDetectionRateOfDetectionFunction . 
+:has_failure :UnableToDetectObstacle_AtSmallObstacleSize_AtLowUpdateRateOfDetectionFunction ;
+:has_failure :MisclassifyingSingleLargeObstacleAsMultipleObjects_AtLargeObstacleSize_AtLowDetectionRateOfDetectionFunction . 
 
 # Potential Failures List 9
 :Potential_Failures\/List9 a :Potential_Failures ;
-:that_is :UnableToDetectSmallObstacle_AtLowSensorResolution_AtLowDetectionRateOfDetectionFunction ; 
-:that_is :UnableToDetectObstacleType_AtLowSensorResolution_AtLowDetectionRateOfDetectionFunction .
+:has_failure :UnableToDetectSmallObstacle_AtLowSensorResolution_AtLowDetectionRateOfDetectionFunction ; 
+:has_failure :UnableToDetectObstacleType_AtLowSensorResolution_AtLowDetectionRateOfDetectionFunction .
 
 # Potential Failures List 10
 :Potential_Failures\/List10 a :Potential_Failures ;
-:that_is :DelayedObstacleDetection_AtLowCPUUpdateRate_AtHighDetectionRateOfDetectionFunction .
+:has_failure :DelayedObstacleDetection_AtLowCPUUpdateRate_AtHighDetectionRateOfDetectionFunction .
 
 # Potential Failures List 11
 :Potential_Failures\/List11 a :Potential_Failures ;
-:that_is :ReducedDetectionRange_AtHighEnviornmentalHumidity_AtHighDetectionRateOfDetectionFunction . 
+:has_failure :ReducedDetectionRange_AtHighEnviornmentalHumidity_AtHighDetectionRateOfDetectionFunction . 
 
 # Potential Failures List 12
 :Potential_Failures\/List12 a :Potential_Failures ;
-:that_is :MissedObstacleDetection_AtSmallRobotSize_AtHighDetectionRateOfDetectionFunction . 
+:has_failure :MissedObstacleDetection_AtSmallRobotSize_AtHighDetectionRateOfDetectionFunction . 
