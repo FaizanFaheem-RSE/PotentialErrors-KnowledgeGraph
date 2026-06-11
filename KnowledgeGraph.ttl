@@ -521,7 +521,7 @@ PREFIX : <http://pse.com/>
 # Potential Failures List 4
 :Potential_Failures\/List4 a :Potential_Failures ;
 :has_failure :DifficultManeuvering_LargeRobot_HighSpeed ;
-:has_failure :ObstacleDetectionDifficulty_SmallRobot ; 
+:has_failure :Difficult_Different_ObstaclesDetection_ForSmallSizedRobots ; 
 :has_failure :CollisionRisk_HighNavigationSpeed ;
 :has_failure :PathPlanningInconsistency_LargeRobot_HighNavigationSpeed .  
  
