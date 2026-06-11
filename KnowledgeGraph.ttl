@@ -4,10 +4,10 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 PREFIX : <http://pse.com/>
 
-# MobileRobot Element Info
+# Sensor Element Info
 :Element\/Element1 a :Element ;
-:element_name :MobileRobot ;
-:description 'Technical System'^^xsd:string ;
+:element_name :Sensor ;
+:description 'Subsystem'^^xsd:string ;
 :ref_elementParameter :Element_Parameter\/EParameter1 ;
 :ref_function :Function\/Function1 ;
 :ref_context :InteractionContext\/Context1 . 
@@ -28,10 +28,10 @@ PREFIX : <http://pse.com/>
 :ref_function :Function\/Function3 ;
 :ref_context :InteractionContext\/Context3 . 
 
-# Sensor Element Info
+# MobileRobot Element Info
 :Element\/Element4 a :Element ;
-:element_name :Sensor ;
-:description 'Subsystem'^^xsd:string ;
+:element_name :MobileRobot ;
+:description 'Technical System'^^xsd:string ;
 :ref_elementParameter :Element_Parameter\/EParameter4 ;
 :ref_function :Function\/Function4 ;
 :ref_context :InteractionContext\/Context4 . 
@@ -100,8 +100,8 @@ PREFIX : <http://pse.com/>
 :ref_function :Function\/Function12 ;
 :ref_context :InteractionContext\/Context12 . 
 
-# MobileRobot Element Relationship with Context1
-:MobileRobot :element_participates_in :InteractionContext\/Context1 . 
+# Sensor Element Relationship with Context1
+:Sensor :element_participates_in :InteractionContext\/Context1 .  
 
 # Ground Element Relationship with relationship2
 :Ground :element_participates_in :InteractionContext\/Context2 . 
@@ -109,8 +109,8 @@ PREFIX : <http://pse.com/>
 # Environment Element Relationship with Context3
 :Environment :element_participates_in :InteractionContext\/Context3 . 
 
-# Sensor Element Relationship with Context4
-:Sensor :element_participates_in :InteractionContext\/Context4 . 
+# MobileRobot Element Relationship with Context4
+:MobileRobot :element_participates_in :InteractionContext\/Context4 . 
 
 # CPU Element Relationship with Context5
 :CPU :element_participates_in :InteractionContext\/Context5 . 
@@ -136,10 +136,10 @@ PREFIX : <http://pse.com/>
 # MobileRobot Element Relationship with Context12
 :MobileRobot :element_participates_in :InteractionContext\/Context12 .
 
-# MobileRobot Element Parameter
+# Sensor Element Parameter
 :Element_Parameter\/EParameter1 a :Element_Parameter ;
-:Eparameter :Size ;
-:ref_context :InteractionContext\/Context1 .    
+:Eparameter :Resolution ;
+:ref_context :InteractionContext\/Context1 .     
 
 # Ground Element Parameter
 :Element_Parameter\/EParameter2 a :Element_Parameter ;
@@ -151,9 +151,9 @@ PREFIX : <http://pse.com/>
 :Eparameter :Humidity ;
 :ref_context :InteractionContext\/Context3 . 
 
-# Sensor Element Parameter
+# MobileRobot Element Parameter
 :Element_Parameter\/EParameter4 a :Element_Parameter ;
-:Eparameter :Resolution ;
+:Eparameter :Size ;
 :ref_context :InteractionContext\/Context4 . 
 
 # CPU Element Parameter
@@ -196,8 +196,8 @@ PREFIX : <http://pse.com/>
 :Eparameter :Size ;
 :ref_context :InteractionContext\/Context12 .
 
-# Establishing the relationship between Size and Context1. 
-:Size :element_parameter_participates_in :InteractionContext\/Context1 .
+# Establishing the relationship between Resolution and Context1. 
+:Resolution :element_parameter_participates_in :InteractionContext\/Context1 .
 
 # Establishing the relationship between Friction and Context2. 
 :Friction :element_parameter_participates_in :InteractionContext\/Context2 .
@@ -205,8 +205,8 @@ PREFIX : <http://pse.com/>
 # Establishing the relationship between Humidity and Context3. 
 :Humidity :element_parameter_participates_in :InteractionContext\/Context3 .
 
-# Establishing the relationship between Resolution and Context4. 
-:Resolution :element_parameter_participates_in :InteractionContext\/Context4 .
+# Establishing the relationship between Size and Context4. 
+:Size :element_parameter_participates_in :InteractionContext\/Context4 .
 
 # Establishing the relationship between UpdateRate and Context5. 
 :UpdateRate :element_parameter_participates_in :InteractionContext\/Context5 .
@@ -232,7 +232,7 @@ PREFIX : <http://pse.com/>
 # Establishing the relationship between Size and Context12. 
 :Size :element_parameter_participates_in :InteractionContext\/Context12 .
 
-# MobileRobot Associated Function 
+# Sensor Associated Function 
 :Function\/Function1 a :Function ; 
 :function_name :Navigate ; 
 :ref_functionParameter :Function_Parameter\/FParameter1 ;
@@ -250,7 +250,7 @@ PREFIX : <http://pse.com/>
 :ref_functionParameter :Function_Parameter\/FParameter3 ;
 :ref_context :InteractionContext\/Context3 . 
 
-# Sensor Associated Function 
+# MobileRobot Associated Function 
 :Function\/Function4 a :Function ; 
 :function_name :Navigate ; 
 :ref_functionParameter :Function_Parameter\/FParameter4 ;
@@ -304,7 +304,7 @@ PREFIX : <http://pse.com/>
 :ref_functionParameter :Function_Parameter\/FParameter12 ;
 :ref_context :InteractionContext\/Context12 .
 
-# MobileRobot Function Parameter
+# Sensor Function Parameter
 :Function_Parameter\/FParameter1 a :Function_Parameter ; 
 :fparameter :Speed ;
 :ref_context :InteractionContext\/Context1 .
@@ -319,7 +319,7 @@ PREFIX : <http://pse.com/>
 :fparameter :Speed ;
 :ref_context :InteractionContext\/Context3 .
 
-# Sensor Function Parameter
+# MobileRobot Function Parameter
 :Function_Parameter\/FParameter4 a :Function_Parameter ; 
 :fparameter :Speed ;
 :ref_context :InteractionContext\/Context4 .
@@ -364,8 +364,8 @@ PREFIX : <http://pse.com/>
 :fparameter :Size ;
 :ref_context :InteractionContext\/Context12 .
 
-# Establishing the relationship between MobileRobot and Function. 
-:MobileRobot :has_function :Navigate . 
+# Establishing the relationship between Sensor and Function. 
+:Sensor :has_function :Navigate . 
 
 # Establishing the relationship between Ground and Function. 
 :Ground :has_function :Navigate . 
@@ -373,8 +373,8 @@ PREFIX : <http://pse.com/>
 # Establishing the relationship between Environment and Function. 
 :Environment :has_function :Navigate . 
 
-# Establishing the relationship between Sensor and Function. 
-:Sensor :has_function :Navigate . 
+# Establishing the relationship between MobileRobot and Function. 
+:MobileRobot :has_function :Navigate .  
 
 # Establishing the relationship between CPU and Function. 
 :CPU :has_function :Navigate . 
@@ -413,7 +413,7 @@ PREFIX : <http://pse.com/>
 :function_participates_in :InteractionContext\/Context11 ;
 :function_participates_in :InteractionContext\/Context12 .
 
-# Establishing the relationship between Speed and Relationship1 & Relationship2 & Relationship3 and so on
+# Establishing the relationship between Speed and Context1 & Context2 & Context3 and so on
 :Speed :function_parameter_participates_in :InteractionContext\/Context1 .
 :Speed :function_parameter_participates_in :InteractionContext\/Context2 .
 :Speed :function_parameter_participates_in :InteractionContext\/Context3 .
@@ -427,10 +427,10 @@ PREFIX : <http://pse.com/>
 :DetectionRate :function_parameter_participates_in :InteractionContext\/Context11 .
 :DetectionRate :function_parameter_participates_in :InteractionContext\/Context12 .
 
-# Context 1 
+# Context 1
 :InteractionContext\/Context1 a :InteractionContext ;
-:has_context_relationship :Allocate ;
-:could_lead_to :Potential_Failures\/List1 .  
+:has_context_relationship :isRealizedBy ;
+:could_lead_to :Potential_Failures\/List1 . 
 
 # Context 2 
 :InteractionContext\/Context2 a :InteractionContext ;
@@ -442,10 +442,10 @@ PREFIX : <http://pse.com/>
 :has_context_relationship :hasFunctionalRelation ;
 :could_lead_to :Potential_Failures\/List3 . 
 
-# Context 4
+# Context 4 
 :InteractionContext\/Context4 a :InteractionContext ;
-:has_context_relationship :isRealizedBy ;
-:could_lead_to :Potential_Failures\/List4 . 
+:has_context_relationship :Allocate ;
+:could_lead_to :Potential_Failures\/List4 .  
 
 # Context 5
 :InteractionContext\/Context5 a :InteractionContext ;
@@ -488,10 +488,10 @@ PREFIX : <http://pse.com/>
 :could_lead_to :Potential_Failures\/List12 .
 
 # Establishing the relationship between List1,List2,List3 and relationships
-:Allocate :associated_with :Potential_Failures\/List1 . 
+:isRealizedBy  :associated_with :Potential_Failures\/List1 .
 :hasFunctionalRelation :associated_with :Potential_Failures\/List2 . 
 :hasFunctionalRelation :associated_with :Potential_Failures\/List3 . 
-:isRealizedBy  :associated_with :Potential_Failures\/List4 . 
+:Allocate :associated_with :Potential_Failures\/List4 . 
 :isRealizedBy  :associated_with :Potential_Failures\/List5 . 
 :isRealizedBy  :associated_with :Potential_Failures\/List6 . 
 :hasFunctionalRelation  :associated_with :Potential_Failures\/List7 . 
@@ -503,10 +503,8 @@ PREFIX : <http://pse.com/>
 
 # Potential Failures List 1
 :Potential_Failures\/List1 a :Potential_Failures ;
-:has_failure :DifficultManeuvering_LargeRobot_HighSpeed ;
-:has_failure :ObstacleDetectionDifficulty_SmallRobot ; 
-:has_failure :CollisionRisk_HighNavigationSpeed ;
-:has_failure :PathPlanningInconsistency_LargeRobot_HighNavigationSpeed .  
+:has_failure :InaccurateObstacleDetection_HighSpeed_LowResolution ; 
+:has_failure :NavigationProblems_HighSpeed_LowResolution .  
 
 # Potential Failures List 2
 :Potential_Failures\/List2 a :Potential_Failures ;
@@ -524,8 +522,10 @@ PREFIX : <http://pse.com/>
 
 # Potential Failures List 4
 :Potential_Failures\/List4 a :Potential_Failures ;
-:has_failure :InaccurateObstacleDetection_HighSpeed_LowResolution ; 
-:has_failure :NavigationProblems_HighSpeed_LowResolution .  
+:has_failure :DifficultManeuvering_LargeRobot_HighSpeed ;
+:has_failure :ObstacleDetectionDifficulty_SmallRobot ; 
+:has_failure :CollisionRisk_HighNavigationSpeed ;
+:has_failure :PathPlanningInconsistency_LargeRobot_HighNavigationSpeed .  
  
 
 # Potential Failures List 5
