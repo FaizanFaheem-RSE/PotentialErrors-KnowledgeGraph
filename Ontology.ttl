@@ -11,7 +11,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 :Function_Parameter rdf:type rdfs:Class .
 :InteractionContext rdf:type rdfs:Class .
 :RelationshipName rdf:type rdfs:Class .
-:Potential_Failures_List rdf:type rdfs:Class .
+:Potential_Failures rdf:type rdfs:Class .
 :Failure rdf:type rdfs:Class .
 
 # Define properties with domain and range
@@ -49,14 +49,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 :could_lead_to rdf:type rdf:Property ;
     rdfs:domain :InteractionContext ;
-    rdfs:range :Potential_Failures_List .
+    rdfs:range :Potential_Failures .
 
 :associated_with rdf:type rdf:Property ;
     rdfs:domain :RelationshipName ;
-    rdfs:range :Potential_Failures_List .
+    rdfs:range :Potential_Failures .
 
 :has_failure rdf:type rdf:Property ;
-    rdfs:domain :Potential_Failures_List ;
+    rdfs:domain :Potential_Failures ;
     rdfs:range :Failure .
 
 :description rdf:type rdf:Property ;

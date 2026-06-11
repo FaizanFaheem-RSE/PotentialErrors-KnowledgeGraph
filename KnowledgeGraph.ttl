@@ -12,7 +12,7 @@ PREFIX : <http://pse.com/>
 :ref_function :Function\/Function1 ;
 :ref_context :InteractionContext\/Context1 . 
 
-# Environment Element Info
+# Ground Element Info
 :Element\/Element2 a :Element ;
 :element_name :Ground ;
 :description 'Influencing Factors'^^xsd:string ;
@@ -20,7 +20,7 @@ PREFIX : <http://pse.com/>
 :ref_function :Function\/Function2 ;
 :ref_context :InteractionContext\/Context2 . 
 
-# Ground Element Info
+# Environment Element Info
 :Element\/Element3 a :Element ;
 :element_name :Environment ;
 :description 'Influencing Factors'^^xsd:string ;
@@ -298,6 +298,12 @@ PREFIX : <http://pse.com/>
 :ref_functionParameter :Function_Parameter\/FParameter11 ;
 :ref_context :InteractionContext\/Context11 .
 
+# MobileRobot Associated Function
+:Function\/Function12 a :Function ;
+:function_name :DetectObstacle ;
+:ref_functionParameter :Function_Parameter\/FParameter12 ;
+:ref_context :InteractionContext\/Context12 .
+
 # MobileRobot Function Parameter
 :Function_Parameter\/FParameter1 a :Function_Parameter ; 
 :fparameter :Speed ;
@@ -497,10 +503,10 @@ PREFIX : <http://pse.com/>
 
 # Potential Failures List 1
 :Potential_Failures\/List1 a :Potential_Failures ;
-:has_failure :Difficult_ManeuverAtHighSpeed_ForLargeSizedRobots ;
-:has_failure :Difficult_Different_ObstaclesDetection_ForSmallSizedRobots ; 
-:has_failure :CollosionRisk_AtHighNavigationSpeed ;
-:has_failure :PathPlanningInconsistencies_ForLargeRobots_AtHighNavigationSpeed .  
+:has_failure :DifficultManeuvering_LargeRobot_HighSpeed ;
+:has_failure :ObstacleDetectionDifficulty_SmallRobot ; 
+:has_failure :CollisionRisk_HighNavigationSpeed ;
+:has_failure :PathPlanningInconsistency_LargeRobot_HighNavigationSpeed .  
 
 # Potential Failures List 2
 :Potential_Failures\/List2 a :Potential_Failures ;
