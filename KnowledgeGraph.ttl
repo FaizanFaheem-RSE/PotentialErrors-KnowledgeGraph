@@ -506,11 +506,11 @@ PREFIX : <http://pse.com/>
 
 # Potential Failures List 2
 :Potential_Failures\/List2 a :Potential_Failures ;
-:has_failure :Skidding_AtHighSpeed_LowFrictionSurface ; 
-:has_failure :StoppingDelay_AtHighSpeed_LowFrictionSurface ; 
-:has_failure :StrainComponents_AtHighFriction_LowSpeed ; 
-:has_failure :WearAndTearComponents_AtHighFriction_HighSpeed ; 
-:has_failure :SlowMovement_AtLowFriction_LowSpeed . 
+:has_failure :Skidding_HighSpeed_LowFriction ; 
+:has_failure :StoppingDelay_HighSpeed_LowFriction ; 
+:has_failure :StrainComponents_HighFriction_LowSpeed ; 
+:has_failure :WearAndTearComponents_HighFriction_HighSpeed ; 
+:has_failure :SlowMovement_LowFriction_LowSpeed . 
 
 # Potential Failures List 3
 :Potential_Failures\/List3 a :Potential_Failures ;
@@ -529,7 +529,7 @@ PREFIX : <http://pse.com/>
 # Potential Failures List 5
 :Potential_Failures\/List5 a :Potential_Failures ;
 :has_failure :HighPowerConsumption_HighSpeed_HighUpdateRate ; 
-:has_failure :DelayedObstaclesDetection_HighSpeed_LowUpdateRate . 
+:has_failure :DelayedObstacleDetection_HighSpeed_LowUpdateRate . 
 
 # Potential Failures List 6
 :Potential_Failures\/List6 a :Potential_Failures ;
@@ -537,28 +537,28 @@ PREFIX : <http://pse.com/>
 
 # Potential Failures List 7
 :Potential_Failures\/List7 a :Potential_Failures ;
-:has_failure :UnableToDetectObstacle_AtHighObstacleVelocity_AtLowDetectionRateOfDetectionFunction ;
-:has_failure :DelayedDetectionOfObstacle_AtHighObstacleVelocity_AtLowDetectionRateOfDetectionFunction ;
-:has_failure :IncorrectClassificationOfObstacleAsStatic_AtLowObstacleVelocity_AtLowDetectionRateOfDetectionFunction . 
+:has_failure :UnableToDetectObstacle_HighObstacleVelocity_LowDetectionRate ;
+:has_failure :DelayedObstacleDetection_HighObstacleVelocity_LowDetectionRate ;
+:has_failure :IncorrectClassificationOfObstacleAsStatic_LowObstacleVelocity_LowDetectionRate . 
 
 # Potential Failures List 8
 :Potential_Failures\/List8 a :Potential_Failures ;
-:has_failure :UnableToDetectObstacle_AtSmallObstacleSize_AtLowUpdateRateOfDetectionFunction ;
-:has_failure :MisclassifyingSingleLargeObstacleAsMultipleObjects_AtLargeObstacleSize_AtLowDetectionRateOfDetectionFunction . 
+:has_failure :MissedObstacleDetection_SmallObstacle_LowDetectionRate ;
+:has_failure :MisclassifyingSingleLargeObstacleAsMultipleObjects_LargeObstacle_LowDetectionRate . 
 
 # Potential Failures List 9
 :Potential_Failures\/List9 a :Potential_Failures ;
-:has_failure :UnableToDetectSmallObstacle_AtLowSensorResolution_AtLowDetectionRateOfDetectionFunction ; 
-:has_failure :UnableToDetectObstacleType_AtLowSensorResolution_AtLowDetectionRateOfDetectionFunction .
+:has_failure :MissedSmallObstacle_LowResolution_LowDetectionRate ; 
+:has_failure :ObstacleTypeRecognitionFailure_LowResolution_LowDetectionRate .
 
 # Potential Failures List 10
 :Potential_Failures\/List10 a :Potential_Failures ;
-:has_failure :DelayedObstacleDetection_AtLowCPUUpdateRate_AtHighDetectionRateOfDetectionFunction .
+:has_failure :DelayedObstacleDetection_LowCPUUpdateRate_HighDetectionRate .
 
 # Potential Failures List 11
 :Potential_Failures\/List11 a :Potential_Failures ;
-:has_failure :ReducedDetectionRange_AtHighEnviornmentalHumidity_AtHighDetectionRateOfDetectionFunction . 
+:has_failure :ReducedDetectionRange_HighEnvironmentalHumidity_HighDetectionRate . 
 
 # Potential Failures List 12
 :Potential_Failures\/List12 a :Potential_Failures ;
-:has_failure :MissedObstacleDetection_AtSmallRobotSize_AtHighDetectionRateOfDetectionFunction . 
+:has_failure :MissedObstacleDetection_SmallRobot_HighDetectionRate . 
